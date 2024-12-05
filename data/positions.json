@@ -1,0 +1,59 @@
+{
+
+    "heroPositions": {
+        "entry": [
+          { "left": 100, "top": 400 },
+          { "left": 100, "top": 400 }
+        ],
+        "exit": [
+          { "left": 1750, "top": 400 },
+          { "left": 1750, "top": 400 }
+        ]
+      },
+      "initialPositions" : [
+         { "left": 100, "top": 400 }, 
+        { "left": 1750, "top": 400 } 
+      ],
+     "mapPositions" :{
+        "0": {
+          "placeHeroAtEntry": [
+            { "index": 0 }  
+          ],
+          "setPositionMultipleItems": [
+            { "index": 1 }, 
+            { "index": 2, "count": 4 },  
+            { "index": 3, "count": 3 }  
+          ]
+        },
+        "1": {
+          "setPositionMultipleItems": [
+            { "index": 1, "count": 2 },  
+            { "index": 2, "count": 2 },  
+            { "index": 3, "count": 6 } 
+          ]
+        },
+        "2": {
+          "setPositionMultipleItems": [
+            { "index": 1, "count": 8 }, 
+            { "index": 2, "count": 5 }, 
+            { "index": 3, "count": 5 }  
+          ]
+        },
+        "3": {
+          "setPositionMultipleItems": [
+            { "index": 1, "count": 2 },  
+            { "index": 2, "count": 3 }, 
+            { "index": 3, "count": 4 }  
+          ]
+        },
+        "4": {
+          "setPositionMultipleItems": [
+            { "index": 1, "count": 1 }, 
+            { "index": 2, "count": 10 }, 
+            { "index": 3, "count": 9 } 
+          ]
+        }
+      }
+      
+
+}

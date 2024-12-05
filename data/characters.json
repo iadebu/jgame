@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "className": "priest1",
+    "name": "Slippery Knight",
+    "health": 100,
+    "damage": 25,
+    "speed": 5,
+    "abilities": [
+      "Fireball Attack",
+      "Dodge"
+    ],
+    "image": "./assets/images/Dungeon/Character_animation/priests_idle/priest1/v1/priest1_v1_1.png"
+  },
+  "enemies": {
+    "vampires": [
+      {
+        "className": "vampire",
+        "type": "Vampire basic",
+        "health": 50,
+        "damage": 10,
+        "speed": 3,
+        "abilities": [
+          "Sword Slash",
+          "Shield Block"
+        ],
+        "image": "./assets/images/Dungeon/Character_animation/monsters_idle/vampire/v2/vampire_v2_3.png"
+      },
+      {
+        "className": "vampire",
+        "type": "Vampire elite",
+        "health": 100,
+        "damage": 15,
+        "speed": 4,
+        "abilities": [
+          "Sword Slash",
+          "Shield Block",
+          "Charge Attack"
+        ],
+        "image": "./assets/images/Dungeon/Character_animation/monsters_idle/vampire/v2/vampire_v2_3.png"
+      }
+    ],
+    "skeletons": [
+      {
+        "className": "skeleton",
+        "type": "Skeleton basic",
+        "health": 30,
+        "damage": 5,
+        "speed": 2,
+        "abilities": [
+          "Sword Slash",
+          "Shield Block"
+        ],
+        "image": "./assets/images/Dungeon/Character_animation/monsters_idle/skeleton1/v2/skeleton_v2_3.png"
+      },
+      {
+        "className": "skeleton",
+        "type": "Skeleton elite",
+        "health": 60,
+        "damage": 12,
+        "speed": 3,
+        "abilities": [
+          "Sword Slash",
+          "Shield Block",
+          "Charge Attack"
+        ],
+        "image": "./assets/images/Dungeon/Character_animation/monsters_idle/skeleton1/v2/skeleton_v2_3.png"
+      }
+    ]
+  },
+  "items": {
+    "flame": {
+      "className": "flame",
+      "image": "./assets/images/Dungeon/items and trap_animation/flamethrower/flamethrower_2_2.png"
+    },
+    "chests": [
+      {
+        "className": "chest closed",
+        "image": "./assets/images/Dungeon/items and trap_animation/chest/chest_3.png"
+      },
+      {
+        "className": "chest open",
+        "image": "./assets/images/Dungeon/items and trap_animation/chest/chest_1.png"
+      }
+
+    ],
+    "coin": {
+      "className": "coin",
+      "image": "./assets/images/Dungeon/items and trap_animation/coin/coin_1.png"
+    },
+    "arrow": {
+      "className": "arrow",
+      "image": "./assets/images/Dungeon/items and trap_animation/arrow/Just_arrow.png"
+    }
+  }
+}

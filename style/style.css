@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'Eater';
+  src: url("../assets/fonts/Eater/Eater-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  color: #f8a50a;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Eater', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal .modal-content {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3), 0 1px 15px rgba(255, 94, 0, 0.4), 0 1px 25px rgba(255, 0, 0, 0.5), 0 1px 40px rgba(212, 0, 0, 0.6);
+  max-width: 80%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .modal-content p {
+  font-size: 16px;
+  margin: 1px 0;
+  color: #555;
+}
+
+.modal .modal-content .controls-description {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
+  grid-auto-rows: minmax(1px, auto);
+}
+
+.modal .modal-content .controls-description h3 {
+  color: #535353;
+  text-align: center;
+}
+
+.modal .modal-content .controls-description p {
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .modal-content .controls-description .control-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d3160c;
+  margin-left: 10px;
+}
+
+.modal .modal-content hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #ff4e00, #ff0000, #d40000, #ff6600);
+  margin: 5px 0;
+}
+
+.modal .modal-content.dark {
+  background-color: #000000;
+  color: #1eff00;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #222222;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1px;
+  z-index: 100;
+  border-bottom: 1px solid rgba(2, 2, 2, 0.25);
+  flex: 0 0 50px;
+  background-color: #000000;
+  color: #1eff00;
+}
+
+#scoreboard .score-item {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+}
+
+#scoreboard .score-item img {
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+}
+
+#scoreboard .score-item h2 {
+  margin: 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color: brown;
+}
+
+#scoreboard .score-item span {
+  font-size: 35px;
+}
+
+.gameArea {
+  position: relative;
+  flex: 1;
+  border: 1px solid #a8a8a8;
+  overflow: hidden;
+}
+
+.gameArea .hero {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  transition: transform 10ms ease;
+}
+
+.gameArea .priest1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  transition: transform 10ms ease;
+}
+
+.gameArea .flipped {
+  transform: scaleX(-1);
+}
+
+.gameArea .chest, .gameArea .skeleton, .gameArea .vampire {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 0;
+}
+
+.gameArea .flame {
+  width: 40px;
+  height: 40px;
+}
+
+.gameArea .coin {
+  width: 25px;
+  height: 25px;
+}
+
+.gameArea .villan_flame {
+  width: 40px;
+  height: 40px;
+  background: red;
+}
+
+.gameArea .gate_3, .gameArea .gate_1, .gameArea .gate_4, .gameArea .gate_2, .gameArea .wall_rotate {
+  transform: rotate(90deg);
+  /* Rotates the element by 45 degrees */
+}
+
+img, .tile {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+  user-select: none;
+  pointer-events: none;
+}

@@ -1,0 +1,75 @@
+{
+  "titles": {
+    "gameTitle": "Slippery Knight",
+    "damageTitle": "Take Care, Knight!",
+    "modalTitle": "Slippery Knight",
+    "content": "Collect your bounty"
+  },
+  "player": {
+    "startingHealth": 100,
+    "startingArmor": 50,
+    "damage": 20,
+    "speed": 5
+  },
+  "levels": {
+    "totalLevels": 5,
+    "levelNames": [
+      "Castle Entrance",
+      "Dungeon Depths",
+      "Vampire Lair",
+      "Treasure Vault",
+      "Final Battle"
+    ]
+  },
+  "controls": {
+    "movement": "WASD",
+    "action": "Spacebar",
+    "attack": "Mouse Click"
+  },
+  "ui": {
+    "enableSound": false,
+    "dark": true,
+    "timeLimit": 120,
+    "scoreIncrement": 1,
+    "wonBountyIncrement": 100
+  },
+  "scoreBoardItems": [
+    {
+      "label": "Level",
+      "id": "currentLevel",
+      "defaultValue": 1,
+      "imageUrl": ""
+    },
+    {
+      "label": "Time Remaining",
+      "id": "remainingTime",
+      "defaultValue": 0,
+      "suffix": "s",
+      "imageUrl": ""
+    },
+    {
+      "label": "Health",
+      "id": "currentHealth",
+      "defaultValue": 0,
+      "imageUrl": ""
+    },
+    {
+      "label": "Armor",
+      "id": "currentArmor",
+      "defaultValue": 0,
+      "imageUrl": ""
+    },
+    {
+      "label": "Score",
+      "id": "currentScore",
+      "defaultValue": 0,
+      "imageUrl": ""
+    },
+    {
+      "label": "Bounty",
+      "id": "currentBounty",
+      "defaultValue": 0,
+      "imageUrl": "./assets/images/Dungeon/items and trap_animation/coin/coin_1.png"
+    }
+  ]
+}
